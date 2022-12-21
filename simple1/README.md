@@ -24,4 +24,9 @@ Packer maps a volume in the temporary container but not `/tmp`:
     docker.simple1: Container ID: 277c3a9b8f97fd6a2591b635153474217fe3d1675ce76cc4e3889e55ef9c3b35
 ```
 
+When I looked at the inforamtion captured about `/tmp` at the time the image was build, it's fine:
+```
+drwxrwxrwt 1 root root 4096 Dec 21 12:17 /tmp
+```
+
 This leads me to investigate other provisioners - the complicated examples of which I spoke use Ansible so I'll probably try that out.
