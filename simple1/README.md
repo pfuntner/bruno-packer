@@ -1,7 +1,7 @@
 # `simple1`
 This is a simple example that creates an Ubuntu Docker image.
 
-I had seen issues in more complicated Packer scripts where `/tmp` in the temporary container was being mapped to a host directory with permission 0700 but that seemed like a very poor idea.
+I had seen issues in more complicated Packer scripts where `/tmp` in the temporary container was being mapped to a host directory with permission 0700 but that seemed like a very poor idea.  I wanted to examine this behavior and potentially open an issue for Packer.
 
 I imagine Packer is trying to protect files in the host directory (files might have access keys, passwords, etc) but the permissions get used in the container.
 
