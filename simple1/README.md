@@ -8,7 +8,7 @@ I imagine Packer is trying to protect files in the host directory (files might h
 ## Packer details
 | Detail | Comment |
 | - | - |
-| [`docker` bulder](https://developer.hashicorp.com/packer/plugins/builders/docker) | Docker is probably versatile and easy to set up |
+| [`docker` builder](https://developer.hashicorp.com/packer/plugins/builders/docker) | Docker is probably versatile and easy to set up |
 | [`shell` provisioner](https://developer.hashicorp.com/packer/docs/provisioners/shell) | I just decided to use a  to check out `/tmp` |
 | Docker tag produced | `simple1:latest` |
 
