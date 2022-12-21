@@ -4,6 +4,8 @@ This is a simple example that creates an Ubuntu Docker image.
 I had seen issues in more complicated Packer scripts where `/tmp` in the temporary container was being mapped to a host directory with permission 077 but that seemed like a very poor idea.
 
 ## Packer details
+| Detail | Comment |
+| - | - |
 | [`docker` bulder](https://developer.hashicorp.com/packer/plugins/builders/docker) | Docker is probably versatile and easy to set up |
 | [`shell` provisioner](https://developer.hashicorp.com/packer/docs/provisioners/shell) | I just decided to use a  to check out `/tmp` |
 | Docker tag produced | `simple1:latest` |
