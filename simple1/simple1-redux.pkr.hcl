@@ -1,7 +1,7 @@
 source "docker" "simple1" {
-  image = "ubuntu:latest"
-  pull = "true"
+  image = "simple1:latest"
   commit = "true"
+  pull = "false"
 }
 
 build {
@@ -17,7 +17,7 @@ build {
     repository = "simple1"
     force = "true"
     tags = [
-      "latest"
+      "redux"
     ]
   }
 }
