@@ -9,7 +9,7 @@ I imagine Packer is trying to protect files in the host directory (files might h
 | Detail | Comment |
 | - | - |
 | [`docker` builder](https://developer.hashicorp.com/packer/plugins/builders/docker) | Docker is probably versatile and easy to set up |
-| [`shell` provisioner](https://developer.hashicorp.com/packer/docs/provisioners/shell) | I just decided to use a  to check out `/tmp` |
+| [`shell` provisioner](https://developer.hashicorp.com/packer/docs/provisioners/shell) | I just decided to use a simple shell command to check out `/tmp`, saving the output in a file in the root user's home directory |
 | Docker tag produced | `simple1:latest` |
 
 ### Building
