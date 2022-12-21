@@ -34,7 +34,7 @@ drwxrwxrwt 1 root root 4096 Dec 21 12:17 /tmp
 This leads me to investigate other provisioners - the complicated examples of which I spoke use Ansible so I'll probably try that out.
 
 # `simple1-redux`
-By default, Packer maps the secure host directory to the build container as `/packer-files` and it the empty directory committed in the created image.
+By default, Packer maps a temporary secure host directory to the build container as `/packer-files`.  As a result, `/packer-files` is committed in the created image as a empty directory.
 
 I was curious if that would prevent the image from being used as the base image for a new `packer build` but it wasn't a problem.
 
